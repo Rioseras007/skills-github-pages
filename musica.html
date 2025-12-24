@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temas musicales de 007</title>
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --card: #121826;
+      --text: #e6edf3;
+      --muted: #9fb0c0;
+      --accent: #2ea043;
+      --border: #223047;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1000px 600px at 50% -200px, #1a2333 0, #0b0f17 60%, #0b0f17 100%);
+      color: var(--text);
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 48px auto;
+      padding: 0 16px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-weight: 800;
+      letter-spacing: .2px;
+    }
+    .sub {
+      color: var(--muted);
+      font-size: .95rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      overflow: hidden;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: 12px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 720px;
+    }
+    thead th {
+      position: sticky;
+      top: 0;
+      background: #162034;
+      color: var(--text);
+      text-align: left;
+      font-weight: 700;
+      border-bottom: 1px solid var(--border);
+      padding: 14px 12px;
+      z-index: 1;
+    }
+    tbody td {
+      border-bottom: 1px solid var(--border);
+      padding: 12px;
+      vertical-align: middle;
+      color: var(--text);
+    }
+    tbody tr:hover {
+      background: #121a2b;
+    }
+    .idx {
+      width: 48px;
+      text-align: right;
+      color: var(--muted);
+    }
+    .title {
+      font-weight: 600;
+    }
+    .year {
+      color: var(--muted);
+      font-size: .92rem;
+      white-space: nowrap;
+    }
+    .actions a {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      border-radius: 8px;
+      transition: transform .04s ease, background .2s ease, border-color .2s ease;
+      margin-right: 8px;
+    }
+    .actions a:hover {
+      background: #1a2740;
+      border-color: #2b3f66;
+      transform: translateY(-1px);
+    }
+    audio { width: 260px; max-width: 100%; }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: .9rem;
+      margin-top: 14px;
+    }
+
+    /* Pequeñas pantallas */
+    @media (max-width: 640px) {
+      .actions a { margin-top: 6px; }
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="wrap">
+    <header>
+       <div class="inicio" align="center"><a href="index.html">HOME</a></div>
+      <h1>Temas musicales de 007</h1>
+      <div class="sub">Esta pagina web es propiedad de la patrulla canina</div>
+    </header>
+
+    <section class="card">
+      <div class="table-wrap">
+        <table aria-label="Temas musicales de 007">
+          <thead>
+            <tr>
+              <th class="idx">#</th>
+              <th>Título</th>
+              <th>Año</th>
+              <th>Reproducir</th>
+              <th>Enlace</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 1 -->
+            <tr>
+              <td class="idx">1</td>
+              <td class="title">Dr. No</td>
+              <td class="year">1962</td>
+              <td><audio controls src="media/dr-no.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/dr-no.mp3" download>Descargar</a>
+                <a href="media/dr-no.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 2 -->
+            <tr>
+              <td class="idx">2</td>
+              <td class="title">From Russia with Love</td>
+              <td class="year">1963</td>
+              <td><audio controls src="media/from-russia-with-love.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/from-russia-with-love.mp3" download>Descargar</a>
+                <a href="media/from-russia-with-love.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 3 -->
+            <tr>
+              <td class="idx">3</td>
+              <td class="title">Goldfinger</td>
+              <td class="year">1964</td>
+              <td><audio controls src="media/goldfinger.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/goldfinger.mp3" download>Descargar</a>
+                <a href="media/goldfinger.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 4 -->
+            <tr>
+              <td class="idx">4</td>
+              <td class="title">Thunderball</td>
+              <td class="year">1965</td>
+              <td><audio controls src="media/thunderball.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/thunderball.mp3" download>Descargar</a>
+                <a href="media/thunderball.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 5 -->
+            <tr>
+              <td class="idx">5</td>
+              <td class="title">You Only Live Twice</td>
+              <td class="year">1967</td>
+              <td><audio controls src="media/you-only-live-twice.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/you-only-live-twice.mp3" download>Descargar</a>
+                <a href="media/you-only-live-twice.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 6 -->
+            <tr>
+              <td class="idx">6</td>
+              <td class="title">On Her Majesty's Secret Service</td>
+              <td class="year">1969</td>
+              <td><audio controls src="media/on-her-majestys-secret-service.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/on-her-majestys-secret-service.mp3" download>Descargar</a>
+                <a href="media/on-her-majestys-secret-service.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 7 -->
+            <tr>
+              <td class="idx">7</td>
+              <td class="title">Diamonds Are Forever</td>
+              <td class="year">1971</td>
+              <td><audio controls src="media/diamonds-are-forever.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/diamonds-are-forever.mp3" download>Descargar</a>
+                <a href="media/diamonds-are-forever.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 8 -->
+            <tr>
+              <td class="idx">8</td>
+              <td class="title">Live and Let Die</td>
+              <td class="year">1973</td>
+              <td><audio controls src="media/live-and-let-die.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/live-and-let-die.mp3" download>Descargar</a>
+                <a href="media/live-and-let-die.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 9 -->
+            <tr>
+              <td class="idx">9</td>
+              <td class="title">The Man with the Golden Gun</td>
+              <td class="year">1974</td>
+              <td><audio controls src="media/the-man-with-the-golden-gun.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/the-man-with-the-golden-gun.mp3" download>Descargar</a>
+                <a href="media/the-man-with-the-golden-gun.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 10 -->
+            <tr>
+              <td class="idx">10</td>
+              <td class="title">The Spy Who Loved Me</td>
+              <td class="year">1977</td>
+              <td><audio controls src="media/the-spy-who-loved-me.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/the-spy-who-loved-me.mp3" download>Descargar</a>
+                <a href="media/the-spy-who-loved-me.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 11 -->
+            <tr>
+              <td class="idx">11</td>
+              <td class="title">Moonraker</td>
+              <td class="year">1979</td>
+              <td><audio controls src="media/moonraker.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/moonraker.mp3" download>Descargar</a>
+                <a href="media/moonraker.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 12 -->
+            <tr>
+              <td class="idx">12</td>
+              <td class="title">For Your Eyes Only</td>
+              <td class="year">1981</td>
+              <td><audio controls src="media/for-your-eyes-only.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/for-your-eyes-only.mp3" download>Descargar</a>
+                <a href="media/for-your-eyes-only.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 13 -->
+            <tr>
+              <td class="idx">13</td>
+              <td class="title">Octopussy (All Time High)</td>
+              <td class="year">1983</td>
+              <td><audio controls src="media/octopussy-all-time-high.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/octopussy-all-time-high.mp3" download>Descargar</a>
+                <a href="media/octopussy-all-time-high.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 14 -->
+            <tr>
+              <td class="idx">14</td>
+              <td class="title">A View to a Kill</td>
+              <td class="year">1985</td>
+              <td><audio controls src="media/a-view-to-a-kill.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/a-view-to-a-kill.mp3" download>Descargar</a>
+                <a href="media/a-view-to-a-kill.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 15 -->
+            <tr>
+              <td class="idx">15</td>
+              <td class="title">The Living Daylights</td>
+              <td class="year">1987</td>
+              <td><audio controls src="media/the-living-daylights.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/the-living-daylights.mp3" download>Descargar</a>
+                <a href="media/the-living-daylights.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 16 -->
+            <tr>
+              <td class="idx">16</td>
+              <td class="title">Licence to Kill</td>
+              <td class="year">1989</td>
+              <td><audio controls src="media/licence-to-kill.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/licence-to-kill.mp3" download>Descargar</a>
+                <a href="media/licence-to-kill.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 17 -->
+            <tr>
+              <td class="idx">17</td>
+              <td class="title">GoldenEye</td>
+              <td class="year">1995</td>
+              <td><audio controls src="media/goldeneye.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/goldeneye.mp3" download>Descargar</a>
+                <a href="media/goldeneye.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 18 -->
+            <tr>
+              <td class="idx">18</td>
+              <td class="title">Tomorrow Never Dies</td>
+              <td class="year">1997</td>
+              <td><audio controls src="media/tomorrow-never-dies.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/tomorrow-never-dies.mp3" download>Descargar</a>
+                <a href="media/tomorrow-never-dies.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 19 -->
+            <tr>
+              <td class="idx">19</td>
+              <td class="title">The World Is Not Enough</td>
+              <td class="year">1999</td>
+              <td><audio controls src="media/the-world-is-not-enough.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/the-world-is-not-enough.mp3" download>Descargar</a>
+                <a href="media/the-world-is-not-enough.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 20 -->
+            <tr>
+              <td class="idx">20</td>
+              <td class="title">Die Another Day</td>
+              <td class="year">2002</td>
+              <td><audio controls src="media/die-another-day.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/die-another-day.mp3" download>Descargar</a>
+                <a href="media/die-another-day.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 21 -->
+            <tr>
+              <td class="idx">21</td>
+              <td class="title">Casino Royale (You Know My Name)</td>
+              <td class="year">2006</td>
+              <td><audio controls src="media/casino-royale-you-know-my-name.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/casino-royale-you-know-my-name.mp3" download>Descargar</a>
+                <a href="media/casino-royale-you-know-my-name.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 22 -->
+            <tr>
+              <td class="idx">22</td>
+              <td class="title">Quantum of Solace (Another Way to Die)</td>
+              <td class="year">2008</td>
+              <td><audio controls src="media/quantum-of-solace-another-way-to-die.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/quantum-of-solace-another-way-to-die.mp3" download>Descargar</a>
+                <a href="media/quantum-of-solace-another-way-to-die.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 23 -->
+            <tr>
+              <td class="idx">23</td>
+              <td class="title">Skyfall</td>
+              <td class="year">2012</td>
+              <td><audio controls src="media/skyfall.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/skyfall.mp3" download>Descargar</a>
+                <a href="media/skyfall.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 24 -->
+            <tr>
+              <td class="idx">24</td>
+              <td class="title">Spectre (Writing's on the Wall)</td>
+              <td class="year">2015</td>
+              <td><audio controls src="media/spectre-writings-on-the-wall.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/spectre-writings-on-the-wall.mp3" download>Descargar</a>
+                <a href="media/spectre-writings-on-the-wall.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+            <!-- 25 -->
+            <tr>
+              <td class="idx">25</td>
+              <td class="title">No Time To Die</td>
+              <td class="year">2021</td>
+              <td><audio controls src="media/no-time-to-die.mp3"></audio></td>
+              <td class="actions">
+                <a href="media/no-time-to-die.mp3" download>Descargar</a>
+                <a href="media/no-time-to-die.mp3" target="_blank" rel="noopener">Abrir</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <footer>© Tu colección Bond 2025 by Rioseras007• Hecho con la ayuda de Antonio2709 y ChatGPT 4.0</footer>
+    </section>
+  </div>
+
+  <!-- Sugerencia: Si publicas en GitHub Pages, coloca tus MP3 en /media/ y sube todo el proyecto -->
+</body>
+</html>
