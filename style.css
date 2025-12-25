@@ -173,6 +173,119 @@ footer {
   transform: translateY(-3px) scale(1.05);
 }
 
+.media-radio {
+  margin-bottom: 60px;
+  width: 300px;
+  margin: 15px 0;
+  border: 2px solid #222;
+  border-radius: 12px;
+}
+
+.media-tv {
+  margin-bottom: 60px;
+  width: 300px;
+  margin: 15px 0;
+  border: 2px solid #222;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #1c1c1c;
+}
+
+.media-title {
+  width: 100%;
+  padding: 14px;
+  background: #222;
+  color: #ab2f2f;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.media-title:hover {
+  background: #333;
+}
+
+.media-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.media-list li {
+  border-top: 1px solid #ccc;
+}
+
+.media-list a {
+  display: block;
+  padding: 12px 14px;
+  text-decoration: none;
+  color: #222;
+}
+
+.media-list a:hover {
+  background: #ddd;
+}
+
+/* ===== EFECTO CRT ===== */
+.panel-retro {
+    position: relative;
+    overflow: hidden;
+}
+
+.panel-retro::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(0,255,106,0.07) 0px,
+        rgba(0,255,106,0.07) 1px,
+        transparent 2px,
+        transparent 4px
+    );
+    pointer-events: none;
+}
+
+.panel-retro::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center,
+        rgba(0,255,106,0.15),
+        rgba(0,0,0,0.8) 70%);
+    mix-blend-mode: screen;
+    pointer-events: none;
+}
+
+text-shadow: 
+   0 0 5px #00ff6a,
+   0 0 10px #00ff6a,
+   0 0 20px rgba(0,255,106,0.6);
+
+  /* ===== REFLEJO DE CRISTAL ===== */
+.panel-retro::marker { display: none; }
+
+.panel-retro::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            120deg,
+            rgba(255,255,255,0.18) 0%,
+            rgba(255,255,255,0.05) 35%,
+            rgba(255,255,255,0) 60%
+        );
+    pointer-events: none;
+    mix-blend-mode: screen;
+}
+ 
+
+
 
 .footer-bottom {
   margin-top: 15px;
